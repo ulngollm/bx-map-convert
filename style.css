@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+}
+
+.input {
+    appearance: none;
+    display: block;
+    border-radius: 7px;
+    border: 1px solid gainsboro;
+    padding: 10px 20px;
+    width: 100%;
+    position: relative;
+}
+
+input.input {
+    margin-bottom: 5px;
+}
+
+form {
+    margin-top: 20px;
+}
+
+.button {
+    padding: 10px 20px;
+    border: none;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
+
+.button:hover {
+    opacity: 0.8;
+}
+
+.button:active {
+    opacity: 0.9;
+}
+
+.result-wrapper {
+    border: 1px solid blue;
+    padding: 10px;
+    position: relative;
+}
+
+.js-copy {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 120px auto;
+}
+
+textarea {
+    resize: none;
+}
+
+label {
+    position: relative;
+    display: block;
+}
+
+.icon {
+    position: absolute;
+    display: block;
+    right: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
