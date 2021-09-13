@@ -26,7 +26,7 @@ function addNewCity(name) {
 }
 
 function removeEmptyField(e) {
-    if (!e.target.value) e.target.remove();
+    if (!e.target.value) e.target.parentElement.remove();
 }
 
 
@@ -45,7 +45,7 @@ document.forms.form.addEventListener('submit', getGeoList);
 
 async function getGeoList(e) {
     e.preventDefault();
-    const fields = e.target.children;
+    const fields = e.target.querySelectorAll('input');
     let requests = [];
     for (let field of fields) {
         let requestString = 'https://geocode-maps.yandex.ru/1.x?apikey=976e3a16-0566-45c9-8b6f-7ea71f9f978d&format=json&results=1&geocode='
