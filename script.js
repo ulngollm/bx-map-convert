@@ -84,5 +84,9 @@ async function getBxPreparedString(newMapPoints, oldParams){
         let result = await request.text();
         document.querySelector('#result').innerHTML = result;
     }
-    // получить ответ и вставить в code
 }
+
+document.querySelector('.js-copy').addEventListener('click', (e)=>{
+    let text = document.querySelector('#result').innerText;
+    navigator.clipboard.writeText(text);
+})
